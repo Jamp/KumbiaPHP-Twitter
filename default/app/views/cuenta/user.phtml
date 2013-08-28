@@ -1,0 +1,6 @@
+<?php
+ View::content();
+ if($profile):
+?>
+    <img src="<?php echo $profile->profile_image_url; ?>"><?php echo $profile->screen_name; ?>
+<?php endif; ?>

@@ -1,0 +1,6 @@
+<h1>Twitter OAuth</h1>
+<?php View::content(); ?>
+<?php if(!empty($_url)): ?>
+    <p>Solo debe hacer click en link de vincular para darle permisos de acceso a la cuenta de Twitter</p>
+    <a href="<?php echo $url; ?>">Vincular</a>
+<?php endif; ?>

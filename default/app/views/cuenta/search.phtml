@@ -1,0 +1,9 @@
+<?php echo Form::open(); ?>
+    <label>Buscar: </label>
+    <?php View::content(); ?>
+    <input type="text" name="query">
+    <input type="submit" name="submit" value="Buscar">
+<?php echo Form::close(); ?>
+<pre>
+    <?php print_r( (!empty($data))?$data:'' ); ?>
+</pre>
